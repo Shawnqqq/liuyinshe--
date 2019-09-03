@@ -1,0 +1,19 @@
+<view class="page-container">
+  <view class="logo-container">
+    <image class="logo-image" src="/image/menu-logo.jpg"></image>
+  </view>
+  <view class="title-container">
+    <view class="title-content">课程精选</view>
+    <view class="title-desc">
+      用心选取专业课程，助你认识你自己，遇见更好的自己
+    </view>
+  </view>
+  <navigator class="item-container" wx:for="{{course}}" url='/pages/course/course?id={{item.id}}'>
+    <image src="/image/menu-item.jpg" class="item-image"></image>
+    <cover-view class="item-text">{{item.name}}</cover-view>
+    <cover-view class="item-phone">联系电话:{{item.teacher_phone}}</cover-view>
+  </navigator>
+  <view class="footer-container">
+    <image class="footer-image" src="/image/menu-footer.jpg"></image>
+  </view>
+</view>

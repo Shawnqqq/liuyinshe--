@@ -1,0 +1,21 @@
+.data-container{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #99999946;
+  margin: 0 20rpx 0 20rpx;
+  padding-left: 40rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+.info-title{
+  height: 100rpx;
+  font-size: 36rpx;
+  padding-left: 30rpx;
+  line-height: 100rpx;
+  border-bottom: 10rpx solid #99999946;
+}
+.data-content{
+  margin-left: 20rpx;
+  color: #333333;
+}

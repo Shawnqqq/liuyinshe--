@@ -1,0 +1,107 @@
+.header-container{
+  width: 100%;
+  height: 400rpx;
+  background-color: rgb(139, 35, 35);
+  position: relative;
+  box-shadow:0 -30rpx 50rpx -30rpx #000 inset ;
+}
+.header-portrait{
+  position: absolute;
+  bottom: -30rpx;
+  right: 50rpx;
+  width: 121rpx;
+  height: 121rpx;
+  border:1px solid #999;
+  border-radius:6rpx;
+  box-shadow: 0 0 3px #999;
+  background-color: #fff;
+}
+.header-name{
+  position: absolute;
+  bottom: 20rpx;
+  right: 30%;
+  letter-spacing: 3rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+.content-container{
+  display: flex;
+  flex-direction: column;
+}
+.content-container .content-from{
+  width: 500rpx;
+  height: 300rpx;
+  margin: 50rpx auto;
+  font-size: 36rpx;
+  padding: 15rpx;
+  border: 1rpx solid rgb(218, 221, 218);
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx 3rpx rgba(12, 236, 12, 0.219);
+}
+.content-from .content-input{
+  width:460rpx;
+  height: 60rpx;
+  margin: 20rpx auto;
+  font-size: 22rpx;
+  border:1rpx solid rgba(153, 153, 153, 0.322);
+  padding-left: 20rpx;
+  box-shadow: 2rpx 2rpx 3rpx rgba(153, 153, 153, 0.253);
+}
+.content-from .content-btn{
+  width: 150rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  background-color: rgb(25, 189, 47);
+  color: #fff;
+  letter-spacing: 4rpx;
+  border-radius: 10rpx;
+  box-shadow: 2rpx 2rpx 4rpx #999;
+}
+.content-container .info-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100rpx;
+  margin-top: 30rpx;
+  padding:0 30rpx 0 30rpx;
+  box-sizing: border-box;
+  border-bottom: 20rpx solid #99999911;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+.content-container .info-container .info-title{
+  font-weight: 600;
+}
+.content-container .info-container .info-btn{
+  color: #999;
+  font-size:24rpx;
+}
+.function-container{
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.function-container .func-item{
+  width: 40%;
+  height: 300rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  border-bottom: 4rpx solid #99999920;
+  box-sizing: border-box;
+}
+.function-container .func-image{
+  width: 81rpx;
+  height: 81rpx;
+  margin-bottom: 20rpx;
+}
+.function-container .first-item{
+  margin-left: 10%;
+  border-right: 4rpx solid #99999920;
+}

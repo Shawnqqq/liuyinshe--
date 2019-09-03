@@ -1,0 +1,37 @@
+Page({
+  data:{
+    classInfo:[],
+    islock:false,
+    user_id:{}
+  },
+  onLoad:function(options){
+    this.getData(options.id)
+    this.setData({
+      user_id:options.id
+    })
+  },
+  getData:function(id){
+    wx.request({
+      url:"http://localhost:3000/api/user/"+id,
+      success:(res)=>{
+        let classInfo = []
+        res.data.user_class.forEach(data=>{
+          wx.request({
+            url:"http://localhost:3000/api/class/"+data.class_id,
+            success:(res)=>{
+              classInfo.push(res.data)
+              this.setData({
+                classInfo:classInfo
+              })
+            }
+          })
+        })
+      }
+    })
+  },
+  click:function(){
+    this.setData({
+      islock : !this.data.islock
+    })
+  }
+})

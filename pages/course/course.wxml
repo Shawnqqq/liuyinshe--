@@ -1,0 +1,16 @@
+<view class="page-container">
+  <view class="logo-container">
+    <image class="logo-image" src="/image/courseSingle.jpg"></image>
+  </view>
+  <view class="title-container">
+    <view class="title-content">{{course.name}}</view>
+    <view class="title-desc">{{course.description}}</view>
+    <view class="title-tag">
+      <view>授课老师:{{course.teacher}}</view>
+      <view class="tag-right">联系电话:{{course.teacher_phone}}</view>
+    </view>
+  </view>
+  <view class="class-container">
+    <view class=""></view>
+  </view>
+</view>

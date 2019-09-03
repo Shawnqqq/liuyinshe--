@@ -1,0 +1,67 @@
+.page-container{
+  background-color: #99999924;
+}
+.page-title{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  padding-left:30rpx;
+  background-color: #ffffff
+}
+.class-container{
+  width: 100%;
+}
+.class-container .class-info{
+  margin:20rpx 20rpx 4rpx 20rpx;
+  display: flex;
+  background-color: #ffffff;
+  padding: 20rpx;
+}
+.class-container .class-info .class-image{
+  width: 81rpx;
+  height: 81rpx;
+}
+.class-container .class-info .class-title{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+.class-name{
+  font-size: 32rpx;
+}
+.class-desc{
+  font-size: 22rpx;
+  color: #999999;
+}
+.class-content .class-detail{
+  text-align: end;
+  font-size: 42rpx;
+  color: #999999;
+}
+.class-content .class-course{
+  font-size: 16rpx;
+  color: #999999;
+}
+.class-lesson{
+  margin:0 20rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20rpx;
+}
+.lesson-title{
+  display: flex;
+  font-size: 24rpx;
+  color: #666666;
+}
+.lesson-title .title-item{
+  width: 100%;
+}
+.lesson-content{
+  display: flex;
+  font-size: 18rpx;
+  color: #999999;
+}
+
+

@@ -1,0 +1,22 @@
+<view class="page-container">
+  <view class="page-title">我报名的班级</view>
+  <view wx:key="unique" wx:for="{{classInfo}}" class="class-container">
+    <navigator class="class-info" bindtap="click" wx:key="{{item.id}}" url="/pages/lesson/lesson?id={{item.class[0].class_id}}&user_id={{user_id}}">
+      <image class="class-image" src="/image/class-item.png"></image>
+      <view class="class-title">
+        <view class="class-name">
+          {{item.class[0].class_name}}
+        </view>
+        <view class="class-desc">
+          {{item.class[0].description}}
+        </view>
+      </view>
+      <view class="class-content">
+        <view class="class-detail">></view>
+        <view class="class-course">所属课程：
+          {{item.class[0].course_name}}
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

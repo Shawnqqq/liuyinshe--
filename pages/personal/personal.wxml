@@ -1,0 +1,30 @@
+<view class="page-container">
+  <view class="header-container">
+    <view class="header-portrait"></view>
+    <view class="header-name">{{userInfo.name}}</view>
+  </view>
+  <view class="content-container">
+    <block wx:if="{{from}}">
+      <view class="content-from">
+        登录
+        <input class="content-input" bindinput="inputName" placeholder="请输入姓名"></input>
+        <input class="content-input" bindinput="inputPhone" placeholder="请输入手机号"></input>
+        <button class="content-btn" bindtap="handleLogin">登录</button>
+      </view>
+    </block>
+    <view class="info-container">
+      <text class="info-title">个人信息</text>
+      <navigator class="info-btn" url="/pages/personalinfo/personalinfo?id={{userInfo.id}}">查看个人信息></navigator>
+    </view>
+    <view class="function-container">
+      <navigator class="func-item first-item" url="/pages/class/class?id={{userInfo.id}}">
+        <image class="func-image" src="/image/query.png"></image>
+        班级查询 
+      </navigator>
+      <navigator class="func-item">
+        <image class="func-image" src="/image/payment.png"></image>
+        消费流水  
+      </navigator>
+    </view>
+  </view>
+</view>
